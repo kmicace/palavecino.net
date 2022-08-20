@@ -1,0 +1,60 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Oswald', sans-serif; }
+  * .container {
+    max-width: 1440px;
+    margin: auto; }
+
+#header {
+  background-color: whitesmoke;
+  display: grid;
+  align-items: center; }
+  #header .container {
+    display: flex; }
+    #header .container img {
+      width: 40%;
+      height: auto;
+      padding: -7px 1px; }
+      #header .container img:hover {
+        width: 42%;
+        transition: 1s; }
+    #header .container nav {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      padding-bottom: 25px;
+      align-items: center; }
+    #header .container a {
+      padding: 5px 8px;
+      margin-top: 25px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      color: black; }
+      #header .container a:hover {
+        background-color: #cecef6; }
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: url(https://img.freepik.com/foto-gratis/increible-toma-aerea-paisaje-urbano-singapur-muchos-rascacielos_181624-18618.jpg?w=996&t=st=1660929968~exp=1660930568~hmac=41d1a09058c064f55fcea47df4dc0f8b08717623a3ef85ac43ef3aafc22445ea); }
+
+button {
+  font-size: 0.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 10px black;
+  color: black;
+  background-color: transparent; }
+  button:hover {
+    background-color: #cecef6; }
