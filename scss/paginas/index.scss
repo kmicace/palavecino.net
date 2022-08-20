@@ -1,10 +1,72 @@
-#hero{
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    color: white ;
-    background-image: url(https://img.freepik.com/foto-gratis/increible-toma-aerea-paisaje-urbano-singapur-muchos-rascacielos_181624-18618.jpg?w=996&t=st=1660929968~exp=1660930568~hmac=41d1a09058c064f55fcea47df4dc0f8b08717623a3ef85ac43ef3aafc22445ea);
-} 
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/foto-gratis/increible-toma-aerea-paisaje-urbano-singapur-muchos-rascacielos_181624-18618.jpg?w=996&t=st=1660929968~exp=1660930568~hmac=41d1a09058c064f55fcea47df4dc0f8b08717623a3ef85ac43ef3aafc22445ea);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    h1{
+        margin: -14px;
+        margin-top: 70px;
+    }
+    .carta{
+        margin: 20px;
+    }
+    .titulo{
+        color: beige;
+        text-shadow: 2px 2px 2px #aaa;
+
+    }
+    .parrafo{
+        font-size: 15px;
+        padding: 5px;
+    }
+    img{
+        width: 60px;
+        color: white;
+    }
+}
+
+#seccion__1 {
+    .container {
+        text-align: center;
+        padding: 200px 20px;
+        h2 {
+            text-shadow: 4px 4px 4px #aaa;
+        }
+
+        h4 {
+            font-size: calc(1.1rem + .1vw);
+        }
+    }
+}
+
+#seccion__2{
+    h4{
+        margin-left: 5px;
+    }
+    .container{
+        padding: 0;
+        max-height: 120px;
+        border: 1px solid white;
+        display: flex;
+        overflow-x: auto;
+        .item{
+            min-width: 110px;
+            height: 110px;
+            line-height: 110px;
+            text-align: center;
+            background-color: black;
+            p{
+                color: white;
+            }
+        }
+    }
+}
