@@ -41,4 +41,46 @@
         }
     }
 }
+#footer{
+    .enlaces{
+        display: flex;
+        img{
+            width: 50%;
+            height: auto; 
+        }
+        p{
+            position: absolute;
+            margin-left: 43%;
+            margin-top: 5%;
+            color: black;
+        }
+        ul{
+            position: relative;
+            margin-top: 15%;
+            li{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                color: #212529;
+            }
+        }
+    }
+    p{
+        margin-bottom: 0%;
+        color: black;
+    }
+    a{
+        text-decoration: none;
+        color: #212529;
+    }
+    .contacto{
+        &__container{
+            display: flex;
+            p{
+                font-size: 15px;
+            }
 
+        }
+    }
+}
