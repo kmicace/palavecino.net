@@ -95,6 +95,12 @@
     #seccion__2 .container .item p {
       color: white; }
 
+#sobreNosotros h1 {
+  text-shadow: 2px 2px 2px #aaa; }
+
+#sobreNosotros .container img {
+  width: 30%; }
+
 button {
   font-size: 0.5em;
   font-weight: bold;
