@@ -1,73 +1,96 @@
-#hero {
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    color: white;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/foto-gratis/increible-toma-aerea-paisaje-urbano-singapur-muchos-rascacielos_181624-18618.jpg?w=996&t=st=1660929968~exp=1660930568~hmac=41d1a09058c064f55fcea47df4dc0f8b08717623a3ef85ac43ef3aafc22445ea);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; 
-    h1{
-        margin: -14px;
-        margin-top: 70px;
-    }
-    .carta{
-        margin: 20px;
-    }
-    .titulo{
-        color: beige;
-        text-shadow: 2px 2px 2px #aaa;
-
-    }
-    .parrafo{
-        font-size: 15px;
-        padding: 5px;
-    }
-    img{
-        width: 60px;
-        color: white;
-    }
-}
-
-#seccion__1 {
-    .container {
-        text-align: center;
-        padding: 200px 20px;
-        h2 {
-            text-shadow: 4px 4px 4px #aaa;
-        }
-
-        h4 {
-            font-size: calc(1.1rem + .1vw);
-        }
-    }
-}
-
-#seccion__2{
-    h4{
-        margin-left: 5px;
-    }
-    .container{
-        padding: 0;
-        max-height: 120px;
-        border: 1px solid white;
+main{
+    #hero {
         display: flex;
-        overflow-x: auto;
-        .item{
-            min-width: 110px;
-            height: 110px;
-            line-height: 110px;
-            text-align: center;
-            background-color: black;
-            p{
-                color: white;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding-bottom: 30px;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/foto-gratis/increible-toma-aerea-paisaje-urbano-singapur-muchos-rascacielos_181624-18618.jpg?w=996&t=st=1660929968~exp=1660930568~hmac=41d1a09058c064f55fcea47df4dc0f8b08717623a3ef85ac43ef3aafc22445ea);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; 
+        h1{
+            margin: -14px;
+            margin-top: 70px;
+            text-shadow: 2px 2px 2px #aaa;
+        }
+        .carta{
+            margin: 20px;
+            padding-bottom: 20px;
+            &_titulo{
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+        }
+        .titulo{
+            color: beige;
+            text-shadow: 2px 2px 2px #aaa;
+        }
+        .parrafo{
+            font-size: 15px;
+            padding: 5px;
+        }
+        img{
+            width: 60px;
+            height: 60px;
+            color: white;
+        }
+        .boton{
+            font-size: 0.5em;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 2px solid rgba($color: #000000, $alpha: 1.0);
+            box-shadow: 2px 2px 10px rgba($color: #000000, $alpha: 1.0);
+            color: black;
+            background-color: #c1c1cd;
+            &:hover{
+                background-color: beige;
             }
         }
     }
-}
+
+    #seccion__1 {
+        .container {
+            background-color: whitesmoke;
+            text-align: center;
+            padding: 200px 20px;
+            h2 {
+                text-shadow: 4px 4px 4px #aaa;
+            }
+
+            h4 {
+                font-size: calc(1.1rem + .1vw);
+            }
+        }
+    }
+
+    #seccion__2{
+        h4{
+            margin-left: 5px;
+            margin: -1px;
+            background-color: #bebebe;
+        }
+        .container{
+            padding: 0;
+            max-height: 120px;
+            border: 0px solid white;
+            display: flex;
+            overflow-x: auto;
+            .item{
+                min-width: 110px;
+                height: 110px;
+                line-height: 110px;
+                text-align: center;
+                background-color: black;
+                p{
+                    color: white;
+                }
+            }
+        }
+    }
+}  
+    

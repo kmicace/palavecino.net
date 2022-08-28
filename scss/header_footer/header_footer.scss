@@ -1,5 +1,5 @@
 #header{
-    background-color: rgb(245, 245, 245);
+    background-color: #bebebe;
     display: grid;
     align-items: center;
     .container{
@@ -77,8 +77,14 @@
     .contacto{
         &__container{
             display: flex;
+            i{
+                margin-top: 2px;
+                color: #212529;
+            }
             p{
                 font-size: 15px;
+                margin-left: 5px;
+                color: #212529;
             }
 
         }

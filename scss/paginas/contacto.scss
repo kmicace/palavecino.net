@@ -1,0 +1,25 @@
+#main{
+    #contacto{
+        flex-direction: column;
+        .wsp{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            a {
+                text-decoration: none;
+                font-size: 60px;
+                width: 90px;
+                height: 90px;
+                line-height: 90px;
+                text-align: center;
+                background-color: #000;
+                color: white;
+                border-radius: 50%;
+                box-shadow: 2px 2px 5px rgb(0,0,0/ 50%);
+                transition: all .4s ease-in-out;
+            }
+        }
+    }
+ }
