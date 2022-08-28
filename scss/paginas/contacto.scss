@@ -1,6 +1,14 @@
 #main{
     #contacto{
         flex-direction: column;
+        div{
+            .card{
+                padding: 25px;
+            }
+        }
+        .btn{
+            background-color: #6c757d;
+        }
         .wsp{
             display: flex;
             flex-direction: column;

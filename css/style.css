@@ -159,12 +159,16 @@ main {
     justify-content: center; }
   main #sobreNosotros .container {
     text-align: center;
-    padding: 80px 20px; }
+    padding: 25px 20px; }
     main #sobreNosotros .container img {
       width: 30%; }
 
 #main #contacto {
   flex-direction: column; }
+  #main #contacto div .card {
+    padding: 25px; }
+  #main #contacto .btn {
+    background-color: #6c757d; }
   #main #contacto .wsp {
     display: flex;
     flex-direction: column;
@@ -210,4 +214,27 @@ main {
         margin-top: 10px; }
     #main .servicios .carta_parrafo p {
       margin: 15px;
-      line-height: 1.8; }
+      line-height: 2; }
+    #main .servicios .carta .boton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 40px;
+      color: black;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: .3s ease all;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden; }
+      #main .servicios .carta .boton:hover .icono {
+        left: calc(100% - 50px);
+        opacity: 1; }
+      #main .servicios .carta .boton span {
+        transition: .4s ease-in-out all;
+        position: absolute;
+        left: 40%; }
+        #main .servicios .carta .boton span:hover {
+          left: 20px; }
