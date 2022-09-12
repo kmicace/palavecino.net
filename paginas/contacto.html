@@ -30,37 +30,37 @@
         </div>
     </header>
     <main id="main" class="bgn-secondary">
+        <img src="../img/bannerPalavecino.jpeg" alt="">
         <section id="contacto" class="d-flex justify-content-center">
-            <div class="card col-md-5 p-5">
-                <h1 class="contactanos mb-3">¡Contactanos y obtené el mejor servicio!</h1>
-                <div class="mb-2">
-                    <form action="enviar.php" method="post">
-                        <div class="mb-2">
-                            <label for="nombre">Nombre de Administración</label>
-                            <input type="text" class="form-control" name="nombre" id="nombre" required>
+            <h1>¡Contactanos y obtené el mejor servicio!</h1>
+            <div class="redesYcontacto row">
+                <div class="consultas consultas_wsp">
+                    <h4>Nuestro whatsapp</h4>
+                    <a href="https:wa.me/541165449000?text=¡Hola!%20quería%20consultar%20sobre.." class="fa fa-whatsapp" aria-hidden="true"></a>
+                </div>
+                <hr>
+                <div class="consultas consultas_mail">
+                    <h4>Nuestros mails</h4>
+                    <div class="row">
+                        <div class="col">
+                            <p class="p1">Para consultas generales</p>
+                            <a href="mailto:service-palavecino@palavecino.net" class="fa fa-envelope mail1" aria-hidden="true"></a>
                         </div>
-                        <div class="mb-2">
-                            <label for="correo">Correo</label>
-                            <input type="text" class="form-control" name="correo" id="correo" required>
+                        <div class="col">
+                            <p class="p2">Para consultas de presupuestos de cámaras</p>
+                            <a href="mailto:presupuesto-camaras@palavecino.net" class="fa fa-envelope mail2" aria-hidden="true"></a>
                         </div>
-                        <div class="mb-2">
-                            <label for="asunto">Asunto</label>
-                            <input type="text" class="form-control" name="nombre" id="asunto" required>
-                        </div>
-                        <div class="mb-2">
-                            <label for="mensaje">Mensaje</label>
-                            <input type="text" class="form-control" name="nombre" id="nombre" required>
-                        </div>
-                        <div class="mb-2">
-                            <button type="submit" class="btn">Enviar</button>
-                        </div>
-                    </form>
-                </div> 
+                    </div>
+                </div>
+                <hr>
+                <div class="consultas consultas_tel">
+                    <h4>Nuestro teléfono de linea</h4>
+                    <div class="telefono">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>1152762231</p>
+                    </div>
+                </div>
             </div>
-            <div class="wsp">
-                <h4>También podes contactarnos por whatsapp</h4>
-                <a href="https:wa.me/541165449000?text=¡Hola!%20quería%20consultar%20sobre.." class="fa fa-whatsapp" aria-hidden="true"></a>
-            </div>   
         </section>
     </main>
     <footer id="footer">
@@ -79,18 +79,29 @@
                 <div class="redes col-sm-12 col-md-4 col-lg-3">
                     <p> REDES SOCIALES</p>
                     <div class="redes__container">
-                        <a href="https://www.facebook.com/SERVICE.PALAVECINO" class="fa-brands fa-facebook"></a>
-                        <a href="https:wa.me/541165449000?text=¡Hola!%20quería%20consultar%20sobre.." class="fa fa-whatsapp"></a>
+                        <a href="https://www.facebook.com/SERVICE.PALAVECINO" class="fa-brands fa-facebook icono"></a>
+                        <a href="https:wa.me/541165449000?text=¡Hola!%20quería%20consultar%20sobre.." class="fa fa-whatsapp" aria-hidden="true"></a>
                     </div>
                 </div>
                 <div class="contacto col-sm-12 col-md-4 col-lg-3">
-                    <p>CONTACTO</p>
-                    <div class="contacto__container">
-                        <i class="fa-solid fa-envelope-open"></i>
-                        <p>service-palavecino@palavecino.net</p>
+                    <p class="contacto__titulo">CONTACTO</p>
+                    <div class="row contacto__container">
+                        <div class="contacto__container  contacto__container__contenido">
+                            <i class="fa-solid fa-phone">
+                            </i><p>1152762231</p>
+                        </div>    
+                        <div class="contacto__container contacto__container__contenido">
+                            <i class="fa-solid fa-envelope-open"></i> 
+                            <p>service-palavecino@palavecino.net</p>
+                        </div>
                     </div>
+                    <div>
+                        <p class="subtitulo"> Para consultas sobre presupuesto de cámaras</p>
+                        <div class="contacto__container">
+                            <i  class="fa-solid fa-envelope-open" href="mailto:presupuesto-camaras@palavecino.net" aria-hidden="true" ></i>
+                            <p>presupuesto-camaras@palavecino.net</p>
+                        </div>
                 </div>
-
             </div>
         </div>
     </footer>

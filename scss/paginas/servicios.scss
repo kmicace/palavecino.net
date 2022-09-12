@@ -24,7 +24,14 @@
                 p{
                     margin-left: 11px;
                     margin-top: 10px;
-
+                }
+            }
+            &_imagen{
+                margin-top: 5px;
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 35%;
                 }
             }
             &_parrafo{
@@ -61,6 +68,80 @@
                         left: 20px;
                     }
                 }
+            }
+            .pliego{
+                &_modelos{
+                    position: relative;
+                    display: flex;
+                    overflow: hidden;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 15px;
+                    cursor: pointer;
+                    &:hover> .capa{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    &:hover> .capa img{
+                        margin: 50px;
+                    }
+                    .card{
+                     width: 100%;
+                     height: 100%;
+                     border-radius: 5px;
+                     box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+                     margin: 5px;
+                     p{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: flex-start;
+                     }      
+                     .capa{
+                        position: absolute;
+                        display: flex;
+                        top: 0%;
+                        width: 100%;
+                        height: 100%;
+                        margin-left: 0%;
+                        background: rgba(0, 0, 0, .8);
+                        opacity: 0;
+                        transition: .5s;
+                        color: black;
+                        &:hover{
+                            opacity: 1;
+                         }
+                        .col{
+                            padding: 0%;
+                        }
+                        img{
+                            width: 100%;
+                            height: 50%;
+                        }
+                        &__1{
+                            position: absolute;
+                            display: flex;
+                            top: 0%;
+                            width: 100;
+                            background: rgba(0, 0, 0, 0.8);
+                            opacity: 0;
+                            transition: .5s;
+                            color: black;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        &__2 {
+                            img{
+                                padding: 0%;
+                            }
+                        }
+                     }
+                    }
+                }
+                
             }
         }
     }

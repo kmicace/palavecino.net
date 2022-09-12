@@ -60,23 +60,39 @@
       text-decoration: none;
       color: #212529; }
 
-#footer p {
-  margin-bottom: 0%;
-  color: black; }
+#footer .redes {
+  display: flex; }
+  #footer .redes__container a {
+    margin-left: 3px;
+    font-size: 20px; }
 
 #footer a {
   text-decoration: none;
   color: #212529; }
 
+#footer .contacto__titulo {
+  margin-top: 10px;
+  margin-bottom: 0%; }
+
+#footer .contacto .subtitulo {
+  margin-bottom: 0%;
+  font-size: 13px;
+  margin-top: 10px; }
+
 #footer .contacto__container {
-  display: flex; }
+  display: flex;
+  align-items: baseline;
+  margin-bottom: -10px; }
   #footer .contacto__container i {
-    margin-top: 2px;
-    color: #212529; }
+    margin-bottom: 0%;
+    color: black;
+    font-size: 15px; }
   #footer .contacto__container p {
     font-size: 15px;
     margin-left: 5px;
-    color: #212529; }
+    color: #3e4145; }
+  #footer .contacto__container__contenido {
+    display: flex; }
 
 main #hero {
   display: flex;
@@ -85,21 +101,37 @@ main #hero {
   text-align: center;
   color: white;
   padding-bottom: 30px;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/foto-gratis/increible-toma-aerea-paisaje-urbano-singapur-muchos-rascacielos_181624-18618.jpg?w=996&t=st=1660929968~exp=1660930568~hmac=41d1a09058c064f55fcea47df4dc0f8b08717623a3ef85ac43ef3aafc22445ea);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
+  background-image: linear-gradient(135deg, #25316D, #5F6F94, #CFD2CF);
+  background-size: 500%;
+  animation: fanimado 10s infinite; }
   main #hero h1 {
     margin: -14px;
+    font-size: calc(1.5rem + 1.5vw);
     margin-top: 70px;
     text-shadow: 2px 2px 2px #aaa; }
+
+@keyframes fanimado {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+  main #hero .logoIndex {
+    width: 80%;
+    height: 50%; }
+  main #hero p {
+    margin: 10px;
+    font-size: 15px; }
+  main #hero .cartas {
+    margin: 50px; }
   main #hero .carta {
     margin: 20px;
     padding-bottom: 20px; }
     main #hero .carta_titulo {
       display: flex;
       justify-content: center;
-      align-items: flex-end; }
+      align-items: center; }
   main #hero .titulo {
     color: beige;
     text-shadow: 2px 2px 2px #aaa; }
@@ -128,6 +160,7 @@ main #seccion__1 .container {
   main #seccion__1 .container h2 {
     text-shadow: 4px 4px 4px #aaa; }
   main #seccion__1 .container h4 {
+    margin-top: 50px;
     font-size: calc(1.1rem + .1vw); }
 
 main #seccion__2 h4 {
@@ -152,6 +185,9 @@ main #seccion__2 .container {
 
 main {
   background-color: whitesmoke; }
+  main video {
+    width: 99%;
+    margin: 1.5px; }
   main #sobreNosotros h1 {
     text-shadow: 2px 2px 2px #aaa;
     padding: 15px;
@@ -163,30 +199,125 @@ main {
     main #sobreNosotros .container img {
       width: 30%; }
 
+#main img {
+  width: 100%; }
+
 #main #contacto {
   flex-direction: column; }
-  #main #contacto div .card {
-    padding: 25px; }
-  #main #contacto .btn {
-    background-color: #6c757d; }
-  #main #contacto .wsp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px; }
-    #main #contacto .wsp a {
-      text-decoration: none;
-      font-size: 60px;
-      width: 90px;
-      height: 90px;
-      line-height: 90px;
-      text-align: center;
-      background-color: #000;
-      color: white;
-      border-radius: 50%;
-      box-shadow: 2px 2px 5px black;
-      transition: all .4s ease-in-out; }
+  #main #contacto h1 {
+    font-size: calc(1.375rem + 1.4vw);
+    margin-left: 10px;
+    margin-top: 30px;
+    text-shadow: 2px 2px 2px #aaa; }
+  #main #contacto .redesYcontacto {
+    width: 100%; }
+    #main #contacto .redesYcontacto .consultas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px; }
+      #main #contacto .redesYcontacto .consultas hr {
+        width: 50px;
+        color: #000; }
+      #main #contacto .redesYcontacto .consultas a {
+        text-decoration: none;
+        font-size: 60px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        background-color: #000;
+        color: white;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px black;
+        transition: all .4s ease-in-out; }
+      #main #contacto .redesYcontacto .consultas .row {
+        width: 90%;
+        margin: 1px;
+        padding: 1px;
+        align-items: flex-end; }
+        #main #contacto .redesYcontacto .consultas .row p {
+          font-size: 14px; }
+        #main #contacto .redesYcontacto .consultas .row .p1 {
+          margin-left: 45px; }
+        #main #contacto .redesYcontacto .consultas .row .mail1 {
+          margin-left: 45px; }
+        #main #contacto .redesYcontacto .consultas .row .mail2 {
+          margin-left: 30px; }
+      #main #contacto .redesYcontacto .consultas .telefono {
+        display: flex;
+        align-items: baseline; }
+      #main #contacto .redesYcontacto .consultas h4 {
+        margin-top: 10px; }
+
+@media (max-width: 375px) {
+  #main #contacto h1 {
+    font-size: calc(1.9em + 1.4vw);
+    margin-left: 20px; }
+  #main #contacto .redesYcontacto .consultas .row .p1 {
+    margin-top: 10px;
+    margin-left: 66px; }
+  #main #contacto .redesYcontacto .consultas .row .p2 {
+    margin-top: 20px;
+    margin-left: 16px; }
+  #main #contacto .redesYcontacto .consultas .row .mail1 {
+    margin-left: 75px; }
+  #main #contacto .redesYcontacto .consultas .row .mail2 {
+    margin-left: 75px; }
+  #main #contacto .redesYcontacto .consultas .consultas_tel .telefono i {
+    font-size: 30px; }
+  #main #contacto .redesYcontacto .consultas .consultas_tel .telefono p {
+    font-size: 30px; } }
+
+@media (min-width: 768px) {
+  #main #contacto h1 {
+    font-size: calc(2rem + 1.4vw);
+    margin-left: 85px; }
+  #main #contacto .redesYcontacto .consultas h4 {
+    font-size: calc(2.5rem + .3vw); }
+  #main #contacto .redesYcontacto .consultas a {
+    font-size: 80px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px; }
+  #main #contacto .redesYcontacto .consultas .row {
+    margin-top: 30px; }
+    #main #contacto .redesYcontacto .consultas .row p {
+      font-size: 19px; }
+    #main #contacto .redesYcontacto .consultas .row .p1 {
+      margin-left: 85px; }
+    #main #contacto .redesYcontacto .consultas .row .mail1 {
+      margin-left: 95px; }
+    #main #contacto .redesYcontacto .consultas .row .mail2 {
+      margin-left: 65px; } }
+
+@media (min-width: 1024px) {
+  #main #contacto .redesYcontacto {
+    display: grid;
+    grid-auto-flow: column; }
+    #main #contacto .redesYcontacto hr {
+      display: none; }
+    #main #contacto .redesYcontacto .consultas {
+      justify-content: space-between; }
+      #main #contacto .redesYcontacto .consultas h4 {
+        font-size: calc(1rem + 1.4vw);
+        margin-left: 10px; }
+      #main #contacto .redesYcontacto .consultas .row {
+        flex-wrap: nowrap;
+        padding-left: 0%;
+        padding-right: 0%; }
+        #main #contacto .redesYcontacto .consultas .row .p1 {
+          margin-left: 19px; }
+        #main #contacto .redesYcontacto .consultas .row .mail1 {
+          margin-left: 0px; }
+        #main #contacto .redesYcontacto .consultas .row .mail2 {
+          margin-left: 0px; }
+    #main #contacto .redesYcontacto .telefono i {
+      font-size: 40px; }
+    #main #contacto .redesYcontacto .telefono p {
+      font-size: 50px; } }
 
 #main .servicios {
   width: 100%;
@@ -212,6 +343,12 @@ main {
       #main .servicios .carta_titulo p {
         margin-left: 11px;
         margin-top: 10px; }
+    #main .servicios .carta_imagen {
+      margin-top: 5px;
+      display: flex;
+      justify-content: center; }
+      #main .servicios .carta_imagen img {
+        width: 35%; }
     #main .servicios .carta_parrafo p {
       margin: 15px;
       line-height: 2; }
@@ -238,3 +375,60 @@ main {
         left: 40%; }
         #main .servicios .carta .boton span:hover {
           left: 20px; }
+    #main .servicios .carta .pliego_modelos {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 15px;
+      cursor: pointer; }
+      #main .servicios .carta .pliego_modelos:hover > .capa {
+        opacity: 1;
+        visibility: visible; }
+      #main .servicios .carta .pliego_modelos:hover > .capa img {
+        margin: 50px; }
+      #main .servicios .carta .pliego_modelos .card {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
+        margin: 5px; }
+        #main .servicios .carta .pliego_modelos .card p {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-start; }
+        #main .servicios .carta .pliego_modelos .card .capa {
+          position: absolute;
+          display: flex;
+          top: 0%;
+          width: 100%;
+          height: 100%;
+          margin-left: 0%;
+          background: rgba(0, 0, 0, 0.8);
+          opacity: 0;
+          transition: .5s;
+          color: black; }
+          #main .servicios .carta .pliego_modelos .card .capa:hover {
+            opacity: 1; }
+          #main .servicios .carta .pliego_modelos .card .capa .col {
+            padding: 0%; }
+          #main .servicios .carta .pliego_modelos .card .capa img {
+            width: 100%;
+            height: 50%; }
+          #main .servicios .carta .pliego_modelos .card .capa__1 {
+            position: absolute;
+            display: flex;
+            top: 0%;
+            width: 100;
+            background: rgba(0, 0, 0, 0.8);
+            opacity: 0;
+            transition: .5s;
+            color: black; }
+            #main .servicios .carta .pliego_modelos .card .capa__1 img {
+              width: 100%;
+              height: 100%; }
+          #main .servicios .carta .pliego_modelos .card .capa__2 img {
+            padding: 0%; }
