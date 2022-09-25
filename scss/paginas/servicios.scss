@@ -146,3 +146,28 @@
         }
     }
 }
+//mobile first
+@media (min-width: 1024px){
+    #main{
+        .servicios{
+            margin: auto;
+            .carta{
+                &_parrafo{
+                    margin: 160px;
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+                    .boton{
+                        span{
+                            margin-left: 45%;
+                            transition: none !important;
+                            left: 0% !important;
+                            &:hover{
+                                left: 0px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

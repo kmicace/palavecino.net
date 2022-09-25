@@ -47,19 +47,31 @@
                     .p1{
                         margin-left: 45px;
                     }
-                    .mail1{
+                    .p2{
                         margin-left: 45px;
                     }
-                    .mail2{
-                        margin-left: 30px;
+                    .mail{
+                        margin-left: 30%;
                     }
                 }
-                .telefono{
-                    display: flex;
-                    align-items: baseline;
-                }
-                h4{
-                    margin-top: 10px;
+                &_tel{
+                    .telefono{
+                        display: grid;
+                        justify-content: center;
+                        h4{
+                            margin-top: 10px;
+                        }
+                        .tel{
+                            display: flex;
+                            align-items: baseline;
+                            i{
+                                font-size: 30px;
+                            }
+                            p{
+                                font-size: 30px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -74,6 +86,9 @@
                 margin-left: 20px;
             }
             .redesYcontacto{
+                .imagenes{
+                    display: none;
+                }
                 .consultas{
                     .row{
                         .p1{
@@ -84,26 +99,34 @@
                             margin-top: 20px;
                             margin-left: 16px;
                         }
-                        .mail1{
-                            margin-left: 75px;
-                        }
-                        .mail2{
-                            margin-left: 75px;
+                        .mail{
+                            margin-left: 35%;
                         }
                     }
                 }
-                .consultas .consultas_tel{
+                .consultas_tel{
                     .telefono{
-                        i{
-                            font-size: 30px;
-                        }
-                        p{
-                            font-size: 30px;
+                        display: grid;
+                        justify-content: center;
+                        .tel{
+                            display: flex;
+                            align-items: baseline;
+                            i{
+                                font-size: 30px;
+                            }
+                            p{
+                                font-size: 30px;
+                            }
                         }
                     }
                 }
             }
         }
+    }
+}
+@media(max-width:500px){
+    .imagenes{
+        display: none;
     }
 }
 //mobile first
@@ -115,7 +138,12 @@
                 margin-left: 85px;
             }
             .redesYcontacto{
+                .imagenes{
+                    width: 30%;
+                }
                 .consultas{
+                    display: flex;
+                    flex-direction: row-reverse;
                     h4{
                         font-size: calc(2.5rem + .3vw);
                     }
@@ -125,19 +153,59 @@
                         height: 150px;
                         line-height: 150px;
                     }
-                    .row{
-                        margin-top: 30px;
-                        p{
-                            font-size: 19px;
+                    &_wsp{
+                        a{
+                            margin-top: 50px;
+                            margin-left: 100px;
                         }
-                        .p1{
-                            margin-left: 85px;
+                        h4{
+                            position: absolute;
+                            margin-top: -170px;
+                            margin-left: 330px;
                         }
-                        .mail1{
-                            margin-left: 95px;
+                    }
+                    &_mail{
+                        h4{
+                            position: absolute;
+                            margin-top: -450px;
+                            margin-left: 350px;
                         }
-                        .mail2{
-                            margin-left: 65px;
+                        .mailImg{
+                            margin-left: 140px;
+                        }
+                        .row{
+                            display: grid;
+                            margin-top: 30px;
+                            p{
+                                font-size: 19px;
+                            }
+                            .p1{
+                                margin-left: 85px;
+                            }
+                            .mail1{
+                                margin-left: 95px;
+                            }
+                            .mail2{
+                                margin-left: 65px;
+                            }
+                        }
+                    }
+                    &_tel{
+                        .telefono{
+                            h4{
+                                position: absolute;
+                                margin-left: 420px;
+                                margin-top: 140px;
+                                font-size: calc(1.5rem + .3vw);
+                            }
+                        }
+                        .tel{
+                            position: absolute;
+                            margin-left: 450px;
+                            margin-top: 190px;
+                        }
+                        .telImg{
+                            margin-left: 111px;
                         }
                     }
                 }
@@ -149,38 +217,85 @@
     #main{
         #contacto{
             .redesYcontacto{
+                .imagenes{
+                    filter: brightness(0.7);
+                }
                 hr{
                     display: none;
                 }
-                display: grid;        
-                grid-auto-flow:column;
                 .consultas{
-                    justify-content: space-between;
                     h4{
                         font-size: calc(1rem + 1.4vw);
-                        margin-left: 10px;
+                        position: absolute;
+                        margin-top: -250px;
+                        margin-left: 40%;
                     }
-                    .row{
-                        flex-wrap: nowrap;
-                        padding-left: 0%;
-                        padding-right: 0%;
-                        .p1{
-                            margin-left: 19px;
+                    a{
+                        margin-left: 131px;
+                    }
+                    &_mail{
+                        h4{
+                            margin-top: -405px;
                         }
-                        .mail1{
-                            margin-left: 0px;
+                        .row{
+                            .p1{
+                                margin-left: 90px;
+                            }
                         }
-                        .mail2{
-                            margin-left: 0px;
+                    }
+                    .mailImg{
+                        margin-left: 210px;
+                    }
+                    &_tel{
+                        .telefono{
+                            margin-right: 250px;
+                            h4{
+                                margin-top: 150px;
+                                margin-left: 60%;
+                            }
+                        }
+                        .tel{
+                            display: flex;
+                            align-items: baseline;
+                            position: absolute;
+                            margin-left: 60%;
+                            margin-top: 195px;
+                            i{
+                                font-size: 40px;
+                            }
+                            p{
+                                font-size: 50px;
+                            }
+                        }
+                        .telImg{
+                            margin-bottom: 50px;
+                            width: 50%;
+                            margin-left: 135px;
                         }
                     }
                 }
-                .telefono{
-                    i{
-                        font-size: 40px;
+            }
+        }
+    }
+}
+@media (min-width:1440px){
+    #main{
+        #contacto{
+            .redesYcontacto{
+                .consultas{
+                    .row{
+                        .mail{
+                            margin-left: 20%;
+                        }
                     }
-                    p{
-                        font-size: 50px;
+                    .mailImg{
+                        margin-left: 380px;
+                    }
+                    &_tel{
+                        .telImg{
+                            width: 85%;
+                            margin-left: 25px;
+                        }
                     }
                 }
             }

@@ -19,7 +19,7 @@
       height: auto;
       padding: -7px 1px; }
       #header .container img:hover {
-        width: 42%;
+        width: 25%;
         transition: 1s; }
     #header .container nav {
       display: flex;
@@ -232,17 +232,30 @@ main #hero {
     color: black;
     background-color: #c1c1cd; }
     main #hero .boton:hover {
-      background-color: beige; }
+      background-color: #5a5a8f; }
 
 main #seccion__1 .container {
   background-color: whitesmoke;
   text-align: center;
-  padding: 200px 20px; }
+  padding: 100px 20px; }
   main #seccion__1 .container h2 {
     text-shadow: 4px 4px 4px #aaa; }
+  main #seccion__1 .container p {
+    margin-top: -155px;
+    margin-bottom: 0px;
+    padding-bottom: 5px; }
   main #seccion__1 .container h4 {
     margin-top: 50px;
     font-size: calc(1.1rem + .1vw); }
+  main #seccion__1 .container .imagenes {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 500px; }
+    main #seccion__1 .container .imagenes img {
+      width: auto; }
+    main #seccion__1 .container .imagenes video {
+      height: 500px; }
 
 main #seccion__2 h4 {
   margin-left: 5px;
@@ -256,7 +269,7 @@ main #seccion__2 .container {
   display: flex;
   overflow-x: auto; }
   main #seccion__2 .container .item {
-    min-width: 110px;
+    min-width: 150px;
     height: 110px;
     line-height: 110px;
     text-align: center;
@@ -264,11 +277,70 @@ main #seccion__2 .container {
     main #seccion__2 .container .item p {
       color: white; }
 
+@media (max-width: 375px) {
+  #main #seccion__1 .container .imagenes {
+    display: none; }
+    #main #seccion__1 .container .imagenes video {
+      display: none; }
+  #main #seccion__1 .container p {
+    margin-top: 62px; } }
+
+@media (max-width: 500px) {
+  #main #seccion__1 .container .imagenes {
+    display: none; }
+    #main #seccion__1 .container .imagenes video {
+      display: none; }
+  #main #seccion__1 .container p {
+    margin-top: 40px; } }
+
+@media (min-width: 768px) {
+  #main #hero .container h1 {
+    font-size: 3rem; }
+  #main #hero .container p {
+    font-size: 15px; }
+  #main #hero .container .cartas {
+    display: flex; }
+    #main #hero .container .cartas .carta_titulo {
+      display: flex;
+      flex-direction: column; }
+      #main #hero .container .cartas .carta_titulo p {
+        font-size: 20px; }
+  #main #seccion__1 .container .imagenes img {
+    width: 240px; }
+  #main #seccion__1 .container p {
+    margin: 90px;
+    margin-top: 30px; } }
+
+@media (min-width: 1024px) {
+  #main {
+    flex-direction: column; }
+    #main #hero .container .logoIndex {
+      width: 50%; }
+    #main #hero .container p {
+      color: #000000;
+      font-size: 20px; }
+    #main #hero .container .cartas {
+      display: flex;
+      justify-content: center; }
+      #main #hero .container .cartas p {
+        color: white; }
+    #main #seccion__1 .container p {
+      margin: 100px;
+      padding: 165px;
+      margin-top: -130px; }
+    #main #seccion__1 .container h4 {
+      margin-top: 70px; }
+    #main #seccion__1 .container .imagenes {
+      margin-top: -200px; }
+    #main #seccion__2 {
+      background-color: #000000; }
+      #main #seccion__2 .container .item {
+        width: 300px; } }
+
 main {
   background-color: whitesmoke; }
-  main video {
-    width: 99%;
-    margin: 1.5px; }
+  main img {
+    width: 100%; }
   main #sobreNosotros h1 {
     text-shadow: 2px 2px 2px #aaa;
     padding: 15px;
@@ -323,82 +395,150 @@ main {
           font-size: 14px; }
         #main #contacto .redesYcontacto .consultas .row .p1 {
           margin-left: 45px; }
-        #main #contacto .redesYcontacto .consultas .row .mail1 {
+        #main #contacto .redesYcontacto .consultas .row .p2 {
           margin-left: 45px; }
-        #main #contacto .redesYcontacto .consultas .row .mail2 {
-          margin-left: 30px; }
-      #main #contacto .redesYcontacto .consultas .telefono {
-        display: flex;
-        align-items: baseline; }
-      #main #contacto .redesYcontacto .consultas h4 {
-        margin-top: 10px; }
+        #main #contacto .redesYcontacto .consultas .row .mail {
+          margin-left: 30%; }
+      #main #contacto .redesYcontacto .consultas_tel .telefono {
+        display: grid;
+        justify-content: center; }
+        #main #contacto .redesYcontacto .consultas_tel .telefono h4 {
+          margin-top: 10px; }
+        #main #contacto .redesYcontacto .consultas_tel .telefono .tel {
+          display: flex;
+          align-items: baseline; }
+          #main #contacto .redesYcontacto .consultas_tel .telefono .tel i {
+            font-size: 30px; }
+          #main #contacto .redesYcontacto .consultas_tel .telefono .tel p {
+            font-size: 30px; }
 
 @media (max-width: 375px) {
   #main #contacto h1 {
     font-size: calc(1.9em + 1.4vw);
     margin-left: 20px; }
+  #main #contacto .redesYcontacto .imagenes {
+    display: none; }
   #main #contacto .redesYcontacto .consultas .row .p1 {
     margin-top: 10px;
     margin-left: 66px; }
   #main #contacto .redesYcontacto .consultas .row .p2 {
     margin-top: 20px;
     margin-left: 16px; }
-  #main #contacto .redesYcontacto .consultas .row .mail1 {
-    margin-left: 75px; }
-  #main #contacto .redesYcontacto .consultas .row .mail2 {
-    margin-left: 75px; }
-  #main #contacto .redesYcontacto .consultas .consultas_tel .telefono i {
-    font-size: 30px; }
-  #main #contacto .redesYcontacto .consultas .consultas_tel .telefono p {
-    font-size: 30px; } }
+  #main #contacto .redesYcontacto .consultas .row .mail {
+    margin-left: 35%; }
+  #main #contacto .redesYcontacto .consultas_tel .telefono {
+    display: grid;
+    justify-content: center; }
+    #main #contacto .redesYcontacto .consultas_tel .telefono .tel {
+      display: flex;
+      align-items: baseline; }
+      #main #contacto .redesYcontacto .consultas_tel .telefono .tel i {
+        font-size: 30px; }
+      #main #contacto .redesYcontacto .consultas_tel .telefono .tel p {
+        font-size: 30px; } }
+
+@media (max-width: 500px) {
+  .imagenes {
+    display: none; } }
 
 @media (min-width: 768px) {
   #main #contacto h1 {
     font-size: calc(2rem + 1.4vw);
     margin-left: 85px; }
-  #main #contacto .redesYcontacto .consultas h4 {
-    font-size: calc(2.5rem + .3vw); }
-  #main #contacto .redesYcontacto .consultas a {
-    font-size: 80px;
-    width: 150px;
-    height: 150px;
-    line-height: 150px; }
-  #main #contacto .redesYcontacto .consultas .row {
-    margin-top: 30px; }
-    #main #contacto .redesYcontacto .consultas .row p {
-      font-size: 19px; }
-    #main #contacto .redesYcontacto .consultas .row .p1 {
-      margin-left: 85px; }
-    #main #contacto .redesYcontacto .consultas .row .mail1 {
-      margin-left: 95px; }
-    #main #contacto .redesYcontacto .consultas .row .mail2 {
-      margin-left: 65px; } }
+  #main #contacto .redesYcontacto .imagenes {
+    width: 30%; }
+  #main #contacto .redesYcontacto .consultas {
+    display: flex;
+    flex-direction: row-reverse; }
+    #main #contacto .redesYcontacto .consultas h4 {
+      font-size: calc(2.5rem + .3vw); }
+    #main #contacto .redesYcontacto .consultas a {
+      font-size: 80px;
+      width: 150px;
+      height: 150px;
+      line-height: 150px; }
+    #main #contacto .redesYcontacto .consultas_wsp a {
+      margin-top: 50px;
+      margin-left: 100px; }
+    #main #contacto .redesYcontacto .consultas_wsp h4 {
+      position: absolute;
+      margin-top: -170px;
+      margin-left: 330px; }
+    #main #contacto .redesYcontacto .consultas_mail h4 {
+      position: absolute;
+      margin-top: -450px;
+      margin-left: 350px; }
+    #main #contacto .redesYcontacto .consultas_mail .mailImg {
+      margin-left: 140px; }
+    #main #contacto .redesYcontacto .consultas_mail .row {
+      display: grid;
+      margin-top: 30px; }
+      #main #contacto .redesYcontacto .consultas_mail .row p {
+        font-size: 19px; }
+      #main #contacto .redesYcontacto .consultas_mail .row .p1 {
+        margin-left: 85px; }
+      #main #contacto .redesYcontacto .consultas_mail .row .mail1 {
+        margin-left: 95px; }
+      #main #contacto .redesYcontacto .consultas_mail .row .mail2 {
+        margin-left: 65px; }
+    #main #contacto .redesYcontacto .consultas_tel .telefono h4 {
+      position: absolute;
+      margin-left: 420px;
+      margin-top: 140px;
+      font-size: calc(1.5rem + .3vw); }
+    #main #contacto .redesYcontacto .consultas_tel .tel {
+      position: absolute;
+      margin-left: 450px;
+      margin-top: 190px; }
+    #main #contacto .redesYcontacto .consultas_tel .telImg {
+      margin-left: 111px; } }
 
 @media (min-width: 1024px) {
-  #main #contacto .redesYcontacto {
-    display: grid;
-    grid-auto-flow: column; }
-    #main #contacto .redesYcontacto hr {
-      display: none; }
-    #main #contacto .redesYcontacto .consultas {
-      justify-content: space-between; }
-      #main #contacto .redesYcontacto .consultas h4 {
-        font-size: calc(1rem + 1.4vw);
-        margin-left: 10px; }
-      #main #contacto .redesYcontacto .consultas .row {
-        flex-wrap: nowrap;
-        padding-left: 0%;
-        padding-right: 0%; }
-        #main #contacto .redesYcontacto .consultas .row .p1 {
-          margin-left: 19px; }
-        #main #contacto .redesYcontacto .consultas .row .mail1 {
-          margin-left: 0px; }
-        #main #contacto .redesYcontacto .consultas .row .mail2 {
-          margin-left: 0px; }
-    #main #contacto .redesYcontacto .telefono i {
+  #main #contacto .redesYcontacto .imagenes {
+    filter: brightness(0.7); }
+  #main #contacto .redesYcontacto hr {
+    display: none; }
+  #main #contacto .redesYcontacto .consultas h4 {
+    font-size: calc(1rem + 1.4vw);
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 40%; }
+  #main #contacto .redesYcontacto .consultas a {
+    margin-left: 131px; }
+  #main #contacto .redesYcontacto .consultas_mail h4 {
+    margin-top: -405px; }
+  #main #contacto .redesYcontacto .consultas_mail .row .p1 {
+    margin-left: 90px; }
+  #main #contacto .redesYcontacto .consultas .mailImg {
+    margin-left: 210px; }
+  #main #contacto .redesYcontacto .consultas_tel .telefono {
+    margin-right: 250px; }
+    #main #contacto .redesYcontacto .consultas_tel .telefono h4 {
+      margin-top: 150px;
+      margin-left: 60%; }
+  #main #contacto .redesYcontacto .consultas_tel .tel {
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 195px; }
+    #main #contacto .redesYcontacto .consultas_tel .tel i {
       font-size: 40px; }
-    #main #contacto .redesYcontacto .telefono p {
-      font-size: 50px; } }
+    #main #contacto .redesYcontacto .consultas_tel .tel p {
+      font-size: 50px; }
+  #main #contacto .redesYcontacto .consultas_tel .telImg {
+    margin-bottom: 50px;
+    width: 50%;
+    margin-left: 135px; } }
+
+@media (min-width: 1440px) {
+  #main #contacto .redesYcontacto .consultas .row .mail {
+    margin-left: 20%; }
+  #main #contacto .redesYcontacto .consultas .mailImg {
+    margin-left: 380px; }
+  #main #contacto .redesYcontacto .consultas_tel .telImg {
+    width: 85%;
+    margin-left: 25px; } }
 
 #main .servicios {
   width: 100%;
@@ -513,3 +653,17 @@ main {
               height: 100%; }
           #main .servicios .carta .pliego_modelos .card .capa__2 img {
             padding: 0%; }
+
+@media (min-width: 1024px) {
+  #main .servicios {
+    margin: auto; }
+    #main .servicios .carta_parrafo {
+      margin: 160px;
+      margin-top: 15px;
+      margin-bottom: 20px; }
+      #main .servicios .carta_parrafo .boton span {
+        margin-left: 45%;
+        transition: none !important;
+        left: 0% !important; }
+        #main .servicios .carta_parrafo .boton span:hover {
+          left: 0px !important; } }

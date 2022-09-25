@@ -69,7 +69,7 @@ main{
             color: black;
             background-color: #c1c1cd;
             &:hover{
-                background-color: beige;
+                background-color: rgb(90, 90, 143);
             }
         }
     }
@@ -78,14 +78,30 @@ main{
         .container {
             background-color: whitesmoke;
             text-align: center;
-            padding: 200px 20px;
+            padding: 100px 20px;
             h2 {
                 text-shadow: 4px 4px 4px #aaa;
             }
-
+            p{
+                margin-top: -155px;
+                margin-bottom: 0px;
+                padding-bottom: 5px
+            }
             h4 {
                 margin-top: 50px;
                 font-size: calc(1.1rem + .1vw);
+            }
+            .imagenes{
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                height: 500px;
+                img{
+                    width: auto;
+                }
+                video{
+                    height: 500px;
+                }
             }
         }
     }
@@ -103,7 +119,7 @@ main{
             display: flex;
             overflow-x: auto;
             .item{
-                min-width: 110px;
+                min-width: 150px;
                 height: 110px;
                 line-height: 110px;
                 text-align: center;
@@ -115,4 +131,124 @@ main{
         }
     }
 }  
-    
+//media
+@media (max-width:375px){
+    #main{
+        #seccion__1{
+            .container{
+                .imagenes{
+                    display: none;
+                    video{
+                        display: none;
+                    }
+                }
+                p{
+                    margin-top: 62px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    #main{
+        #seccion__1{
+            .container{
+                .imagenes{
+                    display: none;
+                    video{
+                        display: none;
+                    }
+                }
+                p{
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+//mobile first
+@media (min-width: 768px){
+    #main{
+        #hero{
+            .container{
+                h1{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .cartas{
+                    display: flex;
+                    .carta{
+                        &_titulo{
+                            display: flex;
+                            flex-direction: column;
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #seccion__1{
+            .container{
+                .imagenes{
+                    img{
+                        width: 240px;
+                    }
+                }
+                p{
+                    margin: 90px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px){
+    #main{
+        flex-direction: column;
+        #hero{
+            .container{
+                .logoIndex{
+                    width: 50%;
+                }
+                p{
+                    color: #000000;
+                    font-size: 20px;
+                }
+                .cartas{
+                    display: flex;
+                    justify-content: center;
+                    p{
+                        color: white;
+                    }
+                }
+            }
+        }
+        #seccion__1{
+            .container{
+                p{
+                    margin: 100px;
+                    padding: 165px;
+                    margin-top: -130px;
+                }
+                h4{
+                    margin-top: 70px;
+                }
+                .imagenes{
+                    margin-top: -200px;
+                }
+            }
+        }
+        #seccion__2{
+            background-color: #000000;
+            .container{
+                .item{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
